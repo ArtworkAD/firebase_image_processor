@@ -1,0 +1,22 @@
+{
+  "name": "firebase_image_processor",
+  "version": "1.0",
+  "description": "Firebase cloud function to modify quality and size of an image in google cloud console",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.4.2",
+    "firebase-functions": "^0.7.1",
+    "@google-cloud/storage": "^1.5.0",
+    "mkdirp": "^0.5.1",
+    "mkdirp-promise": "^5.0.1",
+    "child-process-promise": "^2.2.1"
+  },
+  "author": "Artjom Zabelin",
+  "license": "MIT"
+}
